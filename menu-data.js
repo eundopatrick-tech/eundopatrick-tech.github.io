@@ -24,27 +24,13 @@ const CATEGORIES = [
 const MENU = [
 
   // ----- Cold Brew -----
-  { cat: "coldbrew", en: "Nitro Vanilla Cream", ko: "나이트로 바닐라 크림", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000002487%5D_20250626171201110.jpg" },
-  { cat: "coldbrew", en: "Nitro Cold Brew", ko: "나이트로 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000000479%5D_20250626095418324.jpg" },
   { cat: "coldbrew", en: "Dolce Cold Brew", ko: "돌체 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000002081%5D_20250626100020135.jpg" },
-  { cat: "coldbrew", en: "Reserve Nitro", ko: "리저브 나이트로", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/%5B9200000002407%5D_20210225095106743.jpg" },
-  { cat: "coldbrew", en: "Reserve Cold Brew", ko: "리저브 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/03/%5B9200000002093%5D_20240318144604476.jpg" },
-  { cat: "coldbrew", en: "Rice Cream Cold Brew", ko: "막걸리향 크림 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/05/%5B9200000005282%5D_20240509131200017.jpg" },
-  { cat: "coldbrew", en: "Mint Cold Brew", ko: "민트 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2022/10/%5B9200000004312%5D_20221005145029134.jpg" },
   { cat: "coldbrew", en: "Vanilla Einspanner Cold Brew", ko: "바닐라 아인슈페너 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2026/04/%5B9200000006945%5D_20260415131227200.jpg" },
   { cat: "coldbrew", en: "Vanilla Cream Cold Brew", ko: "바닐라 크림 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000000487%5D_20250626095703208.jpg" },
   { cat: "coldbrew", en: "Bergamot Cold Brew", ko: "베르가못 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/11/%5B9200000005991%5D_20251125104417629.jpg" },
-  { cat: "coldbrew", en: "Black&White Cold Brew", ko: "블랙&화이트 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/07/%5B9200000006301%5D_20250703090404091.jpg" },
-  { cat: "coldbrew", en: "Seoul Rice Milk Cold Brew", ko: "서울 막걸리향 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2026/03/%5B9200000006938%5D_20260304125135451.jpg" },
-  { cat: "coldbrew", en: "Smoked Cold Fashioned", ko: "스모크드 콜드 패션드", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/04/%5B9200000006056%5D_20250424105540077.jpg" },
   { cat: "coldbrew", en: "Signature The Black Cold Brew", ko: "시그니처 더 블랙 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000003661%5D_20250626093642415.jpg" },
-  { cat: "coldbrew", en: "Yeosu Shining Hazelnut Cold Brew", ko: "여수 윤슬 헤이즐넛 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000004750%5D_20250626093847094.jpg" },
   { cat: "coldbrew", en: "Oat Cold Brew", ko: "오트 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000003285%5D_20250626095600441.jpg" },
-  { cat: "coldbrew", en: "Jeju Forest Reserve Cold Brew", ko: "제주 비자림 리저브 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/10/%5B9200000005616%5D_20241014134021881.jpg" },
-  { cat: "coldbrew", en: "Cold Brew", ko: "콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000004770%5D_20250626175029778.jpg" },
   { cat: "coldbrew", en: "Cold Brew", ko: "콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B9200000000038%5D_20250626095744182.jpg" },
-  { cat: "coldbrew", en: "Cold Brew Malt", ko: "콜드 브루 몰트", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/%5B9200000001636%5D_20210225093600536.jpg" },
-  { cat: "coldbrew", en: "Cold Brew Float", ko: "콜드 브루 플로트", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/%5B9200000001635%5D_20210225092236748.jpg" },
   { cat: "coldbrew", en: "French Vanilla Cold Brew", ko: "프렌치 바닐라 콜드 브루", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2026/04/%5B9200000006948%5D_20260415131310868.jpg" },
 
   // ----- Brewed Coffee -----
