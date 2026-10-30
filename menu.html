@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drink Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ① 맨 위: 뒤로가기 + 카테고리 탭 -->
+  <header class="bar">
+    <a class="back" href="index.html">← Home</a>
+    <nav id="tabs" class="tabs"></nav>
+  </header>
+
+  <!-- ② 카테고리 제목 -->
+  <h2 id="title" class="title"></h2>
+
+  <!-- ③ 음료 목록 자리 (menu-data.js 의 MENU 로 자동 생성) -->
+  <main id="drinks" class="drink-grid"></main>
+
+  <!-- ④ 음료를 눌렀을 때 뜨는 큰 화면 -->
+  <div id="popup" class="popup" onclick="closePopup()">
+    <div class="popup-card">
+      <img id="popup-img" src="" alt="">
+      <h3 id="popup-en"></h3>
+      <p id="popup-ko"></p>
+      <div class="popup-note">Please show this screen to the barista<br>이 화면을 직원에게 보여주세요</div>
+      <button class="close">Close · 닫기</button>
+    </div>
+  </div>
+
+  <script src="menu-data.js"></script>
+  <script>
+    // 주소창의 ?cat=xxx 를 읽어서 어떤 카테고리인지 알아내기
+    const catId = new URLSearchParams(location.search).get('cat') || CATEGORIES[0].id;
+    const cat = CATEGORIES.find(c => c.id === catId) || CATEGORIES[0];
+
+    // 위쪽 카테고리 탭 만들기
+    const tabs = document.getElementById('tabs');
+    CATEGORIES.forEach(c => {
+      tabs.innerHTML += `<a href="menu.html?cat=${c.id}" class="${c.id === cat.id ? 'on' : ''}">${c.en}</a>`;
+    });
+    // 선택된 탭이 화면에 보이도록 스크롤
+    const onTab = tabs.querySelector('.on');
+    if (onTab) onTab.scrollIntoView({ inline: 'center', block: 'nearest' });
+
+    // 제목
+    document.getElementById('title').innerHTML = `${cat.en} <span>${cat.ko}</span>`;
+
+    // 음료 카드 만들기
+    const list = MENU.filter(m => m.cat === cat.id);
+    const box = document.getElementById('drinks');
+    list.forEach((m, i) => {
+      box.innerHTML += `
+        <button class="drink" onclick="openPopup(${i})">
+          ${m.new ? '<em class="badge">NEW</em>' : ''}
+          <img src="${m.img}" alt="${m.en}" loading="lazy">
+          <strong>${m.en}</strong>
+          <span>${m.ko}</span>
+        </button>`;
+    });
+
+    // 큰 화면 열기 / 닫기
+    function openPopup(i) {
+      const m = list[i];
+      document.getElementById('popup-img').src = m.img;
+      document.getElementById('popup-en').textContent = m.en;
+      document.getElementById('popup-ko').textContent = m.ko;
+      document.getElementById('popup').classList.add('show');
+    }
+    function closePopup() {
+      document.getElementById('popup').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

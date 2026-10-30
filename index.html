@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCK Cafe Menu</title>
+  <title>Drink Menu</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ① 카페 이름 -->
-  <header>
-    <h1>SCK Cafe</h1>
+  <!-- ① 맨 위 제목 -->
+  <header class="top">
+    <h1>Drink Menu</h1>
     <p>Choose a category · 카테고리를 선택하세요</p>
   </header>
 
-  <!-- ② 카테고리 버튼 (한 줄 = 버튼 하나) -->
-  <main class="categories">
-    <a class="cat" href="menu.html?cat=coffee">☕ Coffee<span>커피</span></a>
-    <a class="cat" href="menu.html?cat=noncoffee">🥛 Non-Coffee<span>논커피</span></a>
-    <a class="cat" href="menu.html?cat=tea">🍵 Tea<span>차</span></a>
-    <a class="cat" href="menu.html?cat=ade">🍋 Ade<span>에이드</span></a>
-    <a class="cat" href="menu.html?cat=smoothie">🍓 Smoothie<span>스무디</span></a>
-    <a class="cat" href="menu.html?cat=dessert">🍰 Dessert<span>디저트</span></a>
-  </main>
+  <!-- ② 카테고리 버튼 자리 (버튼은 menu-data.js 의 CATEGORIES 로 자동 생성) -->
+  <main id="categories" class="cat-grid"></main>
 
   <!-- ③ 맨 아래 안내문 -->
   <footer>
-    <p>Prices include VAT · 부가세 포함 가격입니다</p>
+    <p>Tap a drink photo and show it to our barista.<br>음료 사진을 눌러 직원에게 보여주세요.</p>
   </footer>
 
+  <script src="menu-data.js"></script>
+  <script>
+    // 카테고리마다 버튼 하나씩 만들기 (대표 사진 = 그 카테고리의 첫 번째 음료)
+    const box = document.getElementById('categories');
+    CATEGORIES.forEach(c => {
+      const first = MENU.find(m => m.cat === c.id);
+      const count = MENU.filter(m => m.cat === c.id).length;
+      box.innerHTML += `
+        <a class="cat" href="menu.html?cat=${c.id}">
+          <img src="${first ? first.img : ''}" alt="${c.en}" loading="lazy">
+          <strong>${c.en}</strong>
+          <span>${c.ko} · ${count}</span>
+        </a>`;
+    });
+  </script>
 </body>
 </html>
