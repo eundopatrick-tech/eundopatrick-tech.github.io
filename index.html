@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>우리 카페 메뉴</title>
+  <title>SCK Cafe Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>우리 카페 메뉴</h1>
-  <p>홈페이지 만들기 1단계 성공!</p>
+
+  <!-- ① 카페 이름 -->
+  <header>
+    <h1>SCK Cafe</h1>
+    <p>Choose a category · 카테고리를 선택하세요</p>
+  </header>
+
+  <!-- ② 카테고리 버튼 (한 줄 = 버튼 하나) -->
+  <main class="categories">
+    <a class="cat" href="menu.html?cat=coffee">☕ Coffee<span>커피</span></a>
+    <a class="cat" href="menu.html?cat=noncoffee">🥛 Non-Coffee<span>논커피</span></a>
+    <a class="cat" href="menu.html?cat=tea">🍵 Tea<span>차</span></a>
+    <a class="cat" href="menu.html?cat=ade">🍋 Ade<span>에이드</span></a>
+    <a class="cat" href="menu.html?cat=smoothie">🍓 Smoothie<span>스무디</span></a>
+    <a class="cat" href="menu.html?cat=dessert">🍰 Dessert<span>디저트</span></a>
+  </main>
+
+  <!-- ③ 맨 아래 안내문 -->
+  <footer>
+    <p>Prices include VAT · 부가세 포함 가격입니다</p>
+  </footer>
+
 </body>
 </html>
