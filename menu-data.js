@@ -14,7 +14,6 @@ const CATEGORIES = [
   { id: "fizzio", en: "Fizzio", ko: "피지오" },
   { id: "tea", en: "Tea", ko: "티" },
   { id: "others", en: "Others", ko: "기타 음료" },
-  { id: "juice", en: "Juice & Bottled", ko: "주스·병음료" },
 ];
 
 /* ② 음료 목록 (한 줄 = 음료 하나)
@@ -233,17 +232,4 @@ const MENU = [
   { cat: "others", en: "Milk", ko: "우유", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/%5B18%5D_20250626093838261.jpg" },
   { cat: "others", en: "Jeju Hassaku Orange Blended", ko: "제주팔삭 셔벗", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/08/%5B9200000004957%5D_20250827131450142.jpg" },
 
-  // ----- Juice & Bottled -----
-  { cat: "juice", en: "ABC Cleanse Juice 190ML", ko: "ABC 클렌즈 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/03/%5B9300000004346%5D_20240328133443928.jpg" },
-  { cat: "juice", en: "Squeezed Orange Juice 100ML", ko: "스퀴즈드 오렌지 주스 100ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/09/%5B9300000005406%5D_20240905084511440.jpg" },
-  { cat: "juice", en: "Kale Cleanse Juice 190ML", ko: "케일 클렌즈 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/03/%5B9300000004348%5D_20240328133830383.jpg" },
-  { cat: "juice", en: "Strawberry Juice 190ML", ko: "딸기주스 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2025/05/%5B5210008070%5D_20250527081742210.jpg" },
-  { cat: "juice", en: "Mango Juice 190ML", ko: "망고주스 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/10/%5B5210008061%5D_20241031123748556.jpg" },
-  { cat: "juice", en: "Watermelon Juice 190ML", ko: "수박 주스 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/09/%5B9300000005405%5D_20240905084714529.jpg" },
-  { cat: "juice", en: "Organic Orange 100% Juice 190ML", ko: "유기농 오렌지 100% 주스 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/09/%5B9300000003771%5D_20240923184306693.jpg" },
-  { cat: "juice", en: "Kale&Apple Juice 190ML", ko: "케일&사과주스 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/%5B5210008072%5D_20210426100712780.jpg" },
-  { cat: "juice", en: "Hallabong Juice 190ML", ko: "한라봉주스 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/10/%5B5210008055%5D_20241031123524702.jpg" },
-  { cat: "juice", en: "Newly Harvested Apple Juice 190ML", ko: "햇사과 주스 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/09/%5B9300000002565%5D_20240923184651121.jpg" },
-  { cat: "juice", en: "Strawberry Yogurt 190ML", ko: "딸기 가득 요거트 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2021/10/%5B9300000003775%5D_20211020094208342.jpg" },
-  { cat: "juice", en: "Blueberry Yogurt 190ML", ko: "블루베리 요거트 190ML", img: "https://image.istarbucks.co.kr/upload/store/skuimg/2024/09/%5B5210008063%5D_20240923185114500.jpg" },
-];
+  ];
